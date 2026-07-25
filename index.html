@@ -67,7 +67,7 @@
   --bg2:#1a1a17;
   --ink:#ece9e2;
   --mut:#8f8b81;
-  --acc:#e08e91;
+  --acc:#ece9e2;
   --grad-a:#EB6365;
   --grad-b:#7561A9;
   --line:rgba(236,233,226,.13);
@@ -92,12 +92,12 @@ body::after{
 .loader-logo{opacity:0;color:var(--ink)}
 .loader-logo svg{display:block;width:clamp(150px,18vw,210px);height:auto;aspect-ratio:304.9/199.9}
 .loader-line{width:120px;height:1px;background:var(--line);position:relative;overflow:hidden}
-.loader-line::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--grad-a),var(--grad-b));transform:scaleX(0);transform-origin:left;animation:load 1.4s cubic-bezier(.65,0,.35,1) forwards}
+.loader-line::after{content:"";position:absolute;inset:0;background:var(--ink);transform:scaleX(0);transform-origin:left;animation:load 1.4s cubic-bezier(.65,0,.35,1) forwards}
 @keyframes load{to{transform:scaleX(1)}}
 
 /* ---------- progress ---------- */
 .progress{position:fixed;top:0;left:0;height:2px;width:100%;z-index:60}
-.progress span{display:block;height:100%;background:linear-gradient(90deg,var(--grad-a),var(--grad-b));transform-origin:left;transform:scaleX(0)}
+.progress span{display:block;height:100%;background:var(--ink);transform-origin:left;transform:scaleX(0)}
 
 /* ---------- nav ---------- */
 nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:26px clamp(20px,4.5vw,64px);transition:background .5s,padding .5s}
@@ -124,7 +124,7 @@ footer .logo svg{height:17px;aspect-ratio:426.3/63.5}
 }
 .hero-label{font-size:11.5px;letter-spacing:.34em;color:var(--acc);margin-bottom:36px;opacity:0}
 .hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(46px,6.4vw,92px);line-height:1.12;letter-spacing:.01em}
-.hero h1 em,.h2 em{font-style:italic;background:linear-gradient(100deg,var(--grad-a),var(--grad-b));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--grad-a)}
+.hero h1 em,.h2 em{font-style:italic;color:var(--ink)}
 .hero h1 .line{display:block;overflow:hidden}
 .hero h1 .line span{display:block;transform:translateY(110%)}
 .hero-sub{margin-top:40px;font-size:13.5px;line-height:2.4;color:var(--mut);font-weight:300;max-width:420px;opacity:0}
@@ -161,8 +161,10 @@ section{padding:17vh clamp(20px,4.5vw,64px)}
 .vision .h2{margin-bottom:40px}
 .vision .lead-en{margin-bottom:28px;opacity:0;transform:translateY(24px)}
 
-/* ---------- service ---------- */
+/* ---------- service (OFFICEMILL brand colors) ---------- */
 .service{background:var(--bg2)}
+.service .tag em,.service .h2 em,.svc-domain{background:linear-gradient(100deg,var(--grad-a),var(--grad-b));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--grad-a)}
+.service .tag i{background:linear-gradient(90deg,var(--grad-a),var(--grad-b))}
 .svc-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:7vh}
 .svc-card{display:grid;grid-template-columns:1.15fr .85fr;border:1px solid var(--line);background:var(--bg);overflow:hidden}
 @media(max-width:860px){.svc-card{grid-template-columns:1fr}}
@@ -172,7 +174,7 @@ section{padding:17vh clamp(20px,4.5vw,64px)}
 .svc-body{padding:clamp(28px,4vw,60px);display:flex;flex-direction:column;justify-content:center}
 .svc-name{margin-bottom:14px}
 .svc-name img{display:block;width:clamp(200px,24vw,320px);height:auto;object-fit:contain}
-.svc-domain{font-family:var(--serif);font-style:italic;font-size:15px;letter-spacing:.14em;color:var(--acc);margin-bottom:30px}
+.svc-domain{font-family:var(--serif);font-style:italic;font-size:15px;letter-spacing:.14em;margin-bottom:30px}
 .svc-en{font-family:var(--serif);font-size:clamp(17px,1.8vw,21px);line-height:1.7;margin-bottom:20px}
 .svc-desc{font-size:13px;line-height:2.4;color:var(--mut);font-weight:300;margin-bottom:36px}
 .svc-badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:42px}
