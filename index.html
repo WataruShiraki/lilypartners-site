@@ -7,15 +7,15 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LilyPartners,Inc.(リリィパートナーズ)| オフィス環境ポータル「OFFICEMILL」運営</title>
-<meta name="description" content="リリィパートナーズ合同会社は、オフィス環境ポータルサイト「OFFICEMILL」を運営しています。快適なオフィス環境をすべての人に。">
+<title>リリィパートナーズ合同会社｜施設支援事業・新規事業支援事業</title>
+<meta name="description" content="リリィパートナーズ合同会社は、オフィス環境ポータル「OFFICEMILL」の施設支援事業と、経営者データベース「NEWFOR」・新規事業の伴走支援「NEWCON」の新規事業支援事業を展開しています。">
 <link rel="canonical" href="https://lily-p.com/">
 <meta name="robots" content="index, follow">
 <meta name="google-site-verification" content="XZw9IAq0BPVQyqX-RuRk6vUTpuQU1FUc41VCBujU8B0" />
 <meta name="theme-color" content="#131311">
 <meta property="og:site_name" content="LilyPartners,Inc.">
-<meta property="og:title" content="LilyPartners,Inc.(リリィパートナーズ)| Comfortable spaces for everyone.">
-<meta property="og:description" content="オフィス環境ポータルサイト「OFFICEMILL」を運営しています。快適なオフィス環境をすべての人に。">
+<meta property="og:title" content="リリィパートナーズ合同会社｜施設支援事業・新規事業支援事業">
+<meta property="og:description" content="リリィパートナーズ合同会社は、オフィス環境ポータル「OFFICEMILL」の施設支援事業と、経営者データベース「NEWFOR」・新規事業の伴走支援「NEWCON」の新規事業支援事業を展開しています。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://lily-p.com/">
 <meta property="og:image" content="https://lily-p.com/ogp.png">
@@ -24,8 +24,8 @@
 <meta property="og:image:alt" content="LilyPartners,Inc. - Comfortable spaces for everyone.">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="LilyPartners,Inc.(リリィパートナーズ)| Comfortable spaces for everyone.">
-<meta name="twitter:description" content="オフィス環境ポータルサイト「OFFICEMILL」を運営しています。快適なオフィス環境をすべての人に。">
+<meta name="twitter:title" content="リリィパートナーズ合同会社｜施設支援事業・新規事業支援事業">
+<meta name="twitter:description" content="リリィパートナーズ合同会社は、オフィス環境ポータル「OFFICEMILL」の施設支援事業と、経営者データベース「NEWFOR」・新規事業の伴走支援「NEWCON」の新規事業支援事業を展開しています。">
 <meta name="twitter:image" content="https://lily-p.com/ogp.png">
 <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
 <link rel="icon" type="image/svg+xml" href="lilypartners_favicon.svg">
@@ -50,7 +50,7 @@
         "addressRegion": "東京都",
         "addressCountry": "JP"
       },
-      "sameAs": ["https://offml.com"]
+      "sameAs": ["https://offml.com", "https://newfor.jp"]
     },
     {
       "@type": "WebSite",
@@ -194,6 +194,45 @@ section{padding:17vh clamp(20px,4.5vw,64px)}
 .svc-word svg{width:clamp(34px,3.6vw,46px);height:auto;color:#6B7BF0;flex:none}
 .svc-soon{font-family:var(--serif);font-style:italic;font-size:14px;letter-spacing:.14em;color:var(--mut)}
 
+
+/* ---------- business overview (2 pillars) ---------- */
+.biz-intro{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:8vh}
+.pillars{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+@media(max-width:860px){.pillars{grid-template-columns:1fr}}
+.pillar{position:relative;display:block;padding:clamp(32px,4.4vw,64px) clamp(4px,3vw,48px) clamp(32px,4.4vw,64px) 0;transition:background .5s}
+.pillar+.pillar{border-left:1px solid var(--line);padding-left:clamp(20px,3.4vw,52px)}
+@media(max-width:860px){.pillar+.pillar{border-left:0;border-top:1px solid var(--line);padding-left:0}}
+.pillar-no{font-family:var(--serif);font-style:italic;font-size:clamp(64px,8vw,120px);line-height:.9;font-weight:400;margin-bottom:26px}
+.p1 .pillar-no,.p1 .pillar-en{background:linear-gradient(100deg,var(--grad-a),var(--grad-b));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.p2 .pillar-no,.p2 .pillar-en{background:linear-gradient(100deg,#8C9BFF,#FF8A45);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.pillar-en{font-family:var(--serif);font-style:italic;font-size:17px;letter-spacing:.16em;margin-bottom:12px;display:inline-block}
+.pillar-jp{font-size:clamp(22px,2.3vw,30px);font-weight:400;letter-spacing:.08em;margin-bottom:22px}
+.pillar-desc{font-size:13px;line-height:2.4;color:var(--mut);font-weight:300;max-width:440px;margin-bottom:30px}
+.pillar-svcs{display:flex;gap:10px;flex-wrap:wrap}
+.pillar-svcs span{border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-size:11.5px;letter-spacing:.14em;font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:700}
+.pillar-more{position:absolute;right:clamp(4px,3vw,48px);top:clamp(32px,4.4vw,64px);width:46px;height:46px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background .4s,color .4s,border-color .4s}
+.pillar:hover .pillar-more{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+/* ---------- business sections ---------- */
+.biz-head{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,60px);align-items:end;margin-bottom:7vh}
+@media(max-width:860px){.biz-head{grid-template-columns:1fr}}
+.biz-no{font-family:var(--serif);font-style:italic;font-size:clamp(90px,13vw,200px);line-height:.8;font-weight:400}
+.biz-wp .biz-no{background:linear-gradient(100deg,var(--grad-a),var(--grad-b));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.biz-nb .biz-no{background:linear-gradient(100deg,#8C9BFF,#FF8A45);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.biz-nb .tag i{background:linear-gradient(90deg,#8C9BFF,#FF8A45)}
+.biz-nb .tag em{background:linear-gradient(100deg,#8C9BFF,#FF8A45);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.biz-title{font-size:clamp(24px,2.8vw,38px);font-weight:400;letter-spacing:.08em;margin:6px 0 18px}
+.biz-nb{background:var(--bg)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:860px){.duo{grid-template-columns:1fr}}
+.duo .svc-card{grid-template-columns:1fr;grid-template-rows:auto 1fr;margin-top:0!important}
+.duo .svc-media{height:clamp(220px,30vh,320px)}
+.duo .svc-body{justify-content:flex-start}
+.flow{display:flex;align-items:center;justify-content:center;gap:clamp(12px,2vw,26px);margin:0 0 28px;padding:22px 20px;border:1px dashed var(--line);font-size:12.5px;color:var(--mut);letter-spacing:.1em;flex-wrap:wrap;text-align:center}
+.flow b{font-family:ui-monospace,'SF Mono',Menlo,monospace;color:var(--ink);font-weight:800;letter-spacing:.16em}
+.flow i{display:block;width:clamp(30px,6vw,90px);height:1px;background:linear-gradient(90deg,#8C9BFF,#FF8A45);position:relative}
+.flow i::after{content:"";position:absolute;right:-1px;top:-3px;border-left:7px solid #FF8A45;border-top:3.5px solid transparent;border-bottom:3.5px solid transparent}
+
 /* ---------- about ---------- */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:6vh}
 @media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:48px}}
@@ -236,7 +275,7 @@ footer .logo{font-size:15px;color:var(--ink)}
 <nav id="nav">
   <a class="logo" href="#top" aria-label="LilyPartners"><svg xmlns="http://www.w3.org/2000/svg" viewBox="208.5 438.1 426.3 63.5" fill="currentColor"><path fill="currentColor" d="M 271.925781 490.1875 L 266.148438 490.1875 L 266.148438 478.632812 L 280.554688 478.632812 C 286.910156 478.632812 292.082031 473.464844 292.082031 467.105469 C 292.082031 460.75 286.910156 455.582031 280.554688 455.582031 L 228.011719 455.582031 L 228.011719 449.804688 L 280.554688 449.804688 C 290.09375 449.804688 297.855469 457.566406 297.855469 467.105469 C 297.855469 476.648438 290.09375 484.410156 280.554688 484.410156 L 271.925781 484.410156 Z M 271.925781 490.1875 "/><path fill="currentColor" d="M 260.375 484.410156 L 216.460938 484.410156 L 216.460938 449.804688 L 222.234375 449.804688 L 222.234375 478.632812 L 260.375 478.632812 Z M 260.375 484.410156 "/><path fill="currentColor" d="M 326.253906 450.097656 L 326.253906 484.246094 L 347.804688 484.246094 L 347.804688 478.476562 L 332.78125 478.476562 L 332.78125 450.097656 Z M 326.253906 450.097656 "/><path fill="currentColor" d="M 354.28125 484.246094 L 360.558594 484.246094 L 360.558594 459.886719 L 354.28125 459.886719 Z M 354.28125 484.246094 "/><path fill="currentColor" d="M 357.417969 448.0625 C 355.085938 448.0625 353.261719 449.839844 353.261719 452.113281 C 353.261719 454.386719 355.085938 456.167969 357.417969 456.167969 C 359.75 456.167969 361.578125 454.386719 361.578125 452.113281 C 361.578125 449.839844 359.75 448.0625 357.417969 448.0625 "/><path fill="currentColor" d="M 369.9375 484.246094 L 376.214844 484.246094 L 376.214844 449.589844 L 369.9375 449.589844 Z M 369.9375 484.246094 "/><path fill="currentColor" d="M 403.542969 459.886719 L 396.769531 474.941406 L 389.421875 459.886719 L 382.523438 459.886719 L 393.492188 481.921875 L 393.457031 481.992188 L 388.066406 493.59375 L 394.613281 493.59375 L 410.140625 459.886719 Z M 403.542969 459.886719 "/><path fill="currentColor" d="M 422.996094 465.121094 L 422.996094 455.863281 L 429.382812 455.863281 C 431.527344 455.863281 432.859375 456.308594 433.835938 457.34375 C 434.632812 458.191406 435.050781 459.289062 435.050781 460.519531 C 435.050781 461.730469 434.644531 462.777344 433.835938 463.640625 C 432.859375 464.679688 431.527344 465.121094 429.382812 465.121094 Z M 438.832031 467.785156 C 440.554688 466.011719 441.585938 463.296875 441.585938 460.519531 C 441.585938 457.742188 440.554688 455.027344 438.832031 453.253906 C 436.753906 451.070312 433.933594 450.097656 429.6875 450.097656 L 416.460938 450.097656 L 416.460938 484.246094 L 422.996094 484.246094 L 422.996094 470.890625 L 429.6875 470.890625 C 433.96875 470.890625 436.792969 469.933594 438.832031 467.785156 "/><path fill="currentColor" d="M 463.359375 475.972656 L 463.328125 476.015625 C 461.988281 477.945312 459.707031 479.097656 457.226562 479.097656 C 453.289062 479.097656 450.535156 476.214844 450.535156 472.089844 C 450.535156 468.132812 453.347656 465.148438 457.074219 465.148438 C 459.554688 465.148438 461.832031 466.285156 463.324219 468.273438 L 463.359375 468.316406 Z M 469.632812 484.246094 L 469.632812 465.378906 C 469.394531 465.070312 467.894531 463.203125 465.398438 461.636719 C 463.523438 460.464844 461.117188 459.378906 456.207031 459.378906 C 449.507812 459.378906 444.261719 464.964844 444.261719 472.089844 C 444.261719 475.277344 445.367188 478.3125 447.375 480.636719 C 449.59375 483.214844 453.027344 484.753906 456.566406 484.753906 C 459.136719 484.753906 461.410156 483.925781 463.328125 482.300781 L 463.609375 482.058594 L 463.609375 484.246094 Z M 469.632812 484.246094 "/><path fill="currentColor" d="M 490.773438 465.125 C 491.671875 465.125 492.238281 465.15625 493.035156 465.339844 L 493.742188 459.558594 C 493.144531 459.476562 492.605469 459.421875 491.683594 459.378906 C 489.195312 459.261719 486.453125 459.339844 482.664062 461.601562 C 480.488281 462.898438 478.609375 465.039062 478.316406 465.382812 L 478.316406 484.246094 L 484.59375 484.246094 L 484.59375 468.839844 L 484.613281 468.800781 C 485.429688 467.320312 487.742188 465.125 490.773438 465.125 "/><path fill="currentColor" d="M 600.269531 465.125 C 601.167969 465.125 601.734375 465.15625 602.53125 465.339844 L 603.234375 459.558594 C 602.640625 459.476562 602.101562 459.421875 601.175781 459.378906 C 598.691406 459.261719 595.949219 459.339844 592.160156 461.601562 C 589.984375 462.898438 588.105469 465.039062 587.808594 465.382812 L 587.808594 484.246094 L 594.085938 484.246094 L 594.085938 468.839844 L 594.105469 468.800781 C 594.921875 467.320312 597.234375 465.125 600.269531 465.125 "/><path fill="currentColor" d="M 505.65625 481.257812 C 507.375 483.542969 510.285156 484.753906 514.078125 484.753906 C 515.265625 484.753906 517.105469 484.566406 518.007812 484.300781 L 517.046875 479.019531 C 516.476562 479.121094 515.359375 479.238281 514.484375 479.238281 C 512.90625 479.238281 511.730469 478.808594 510.992188 477.957031 C 510.390625 477.25 510.136719 476.289062 510.136719 474.738281 L 510.136719 465.148438 L 518.285156 465.148438 L 518.285156 459.886719 L 510.136719 459.886719 L 510.136719 453.015625 L 503.859375 453.015625 L 503.859375 459.886719 L 498.976562 459.886719 L 498.976562 465.148438 L 503.859375 465.148438 L 503.859375 473.976562 C 503.859375 477.414062 504.398438 479.59375 505.65625 481.257812 "/><path fill="currentColor" d="M 538.652344 465.148438 C 540.210938 465.148438 541.570312 465.652344 542.492188 466.570312 C 543.5625 467.644531 544.019531 469.066406 544.019531 471.328125 L 544.019531 484.246094 L 550.296875 484.246094 L 550.296875 471.835938 C 550.296875 467.933594 549.546875 465.378906 547.789062 463.289062 C 545.71875 460.804688 542.648438 459.378906 539.363281 459.378906 C 536.71875 459.378906 534.21875 459.378906 531.207031 461.21875 C 527.785156 463.316406 526.40625 465.085938 526.195312 465.375 L 526.195312 484.246094 L 532.46875 484.246094 L 532.46875 468.320312 L 532.503906 468.273438 C 533.277344 467.195312 535.5625 465.148438 538.652344 465.148438 "/><path fill="currentColor" d="M 563.136719 469.054688 L 563.164062 468.859375 C 563.5 466.390625 565.949219 464.382812 568.628906 464.382812 C 571.5 464.382812 573.488281 466.710938 573.691406 468.867188 L 573.707031 469.054688 Z M 568.628906 459.378906 C 561.875 459.378906 556.785156 464.84375 556.785156 472.089844 C 556.785156 479.546875 562.03125 484.753906 569.546875 484.753906 C 573.398438 484.753906 577.171875 483.128906 579.445312 480.503906 L 575.917969 476.976562 C 575.144531 477.773438 572.90625 479.753906 569.699219 479.753906 C 566.03125 479.753906 563.21875 477.277344 562.855469 473.738281 L 562.839844 473.546875 L 579.996094 473.546875 C 580.074219 473.039062 580.121094 472.441406 580.121094 471.839844 C 580.121094 464.851562 575.074219 459.378906 568.628906 459.378906 "/><path fill="currentColor" d="M 626.742188 477.289062 C 626.742188 472.105469 622.316406 470.636719 618.761719 469.460938 C 616.535156 468.722656 614.777344 468.136719 614.777344 466.792969 C 614.777344 465.503906 616.195312 464.636719 618.308594 464.636719 C 620.339844 464.636719 622.066406 465.601562 622.996094 466.246094 L 625.921875 461.742188 C 624.335938 460.578125 621.019531 459.378906 617.800781 459.378906 C 611.761719 459.378906 608.5 463.253906 608.5 466.898438 C 608.5 471.492188 612.675781 472.925781 616.03125 474.078125 C 618.410156 474.894531 620.46875 475.601562 620.46875 477.234375 C 620.46875 478.546875 619.066406 479.496094 617.136719 479.496094 C 614.648438 479.496094 612.089844 478.597656 610.398438 477.136719 L 607.390625 481.574219 C 610.199219 483.597656 613.722656 484.753906 617.085938 484.753906 C 623.425781 484.753906 626.742188 480.996094 626.742188 477.289062 "/></svg></a>
   <div class="nav-links">
-    <a href="#service">Service</a>
+    <a href="#business">Business</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </div>
@@ -247,14 +286,14 @@ footer .logo{font-size:15px;color:var(--ink)}
   <div class="hero-text">
     <div class="hero-label" id="heroLabel">LILYPARTNERS, INC.</div>
     <h1>
-      <span class="line"><span>Comfortable</span></span>
-      <span class="line"><span>spaces for</span></span>
-      <span class="line"><span><em>everyone.</em></span></span>
+      <span class="line"><span>Places to work.</span></span>
+      <span class="line"><span>Ventures to</span></span>
+      <span class="line"><span><em>build.</em></span></span>
     </h1>
-    <p class="hero-sub" id="heroSub">快適なオフィス環境を、すべての人に。<br>リリィパートナーズは、オフィス環境ポータルサイト「OFFICEMILL」を運営しています。</p>
-    <a class="hero-cta" id="heroCta" href="#service">
+    <p class="hero-sub" id="heroSub">はたらく場所と、新しい事業を。<br>リリィパートナーズは「施設支援」と「新規事業支援」の2つの事業で、企業の成長を支えています。</p>
+    <a class="hero-cta" id="heroCta" href="#business">
       <span class="circle"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.2"/></svg></span>
-      Our Service
+      Our Business
     </a>
   </div>
   <div class="hero-visual" id="heroVisual">
@@ -263,30 +302,47 @@ footer .logo{font-size:15px;color:var(--ink)}
   <div class="hero-scroll">Scroll<i></i></div>
 </header>
 
-<!-- VISION -->
-<section class="vision">
-  <div class="vision-grid">
+<!-- BUSINESS OVERVIEW -->
+<section class="vision" id="business">
+  <div class="biz-intro">
     <div>
-      <div class="tag"><i></i><em>Vision</em></div>
+      <div class="tag"><i></i><em>Our Business</em></div>
       <h2 class="h2">
-        <span class="rline"><span>Comfortable</span></span>
-        <span class="rline"><span>offices, for</span></span>
-        <span class="rline"><span><em>everyone.</em></span></span>
+        <span class="rline"><span>Two fields,</span></span>
+        <span class="rline"><span>one <em>purpose.</em></span></span>
       </h2>
-      <p class="lead-jp" style="margin-top:36px">快適なオフィス環境をすべての人に。<br>それが私たちのビジョンです。</p>
     </div>
-    <div class="vision-img" id="visionImg"><img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1400&q=80" alt="Well-designed workspace"></div>
+    <p class="lead-jp" style="max-width:440px">はたらく「場所」を整えること。新しい「事業」を生み出すこと。<br>どちらも、企業が次へ進むための土台づくりです。リリィパートナーズは、この2つの領域で事業を展開しています。</p>
+  </div>
+  <div class="pillars">
+    <a class="pillar p1 fade-up" href="#workplace">
+      <div class="pillar-no">01</div>
+      <div class="pillar-en">Workplace</div>
+      <h3 class="pillar-jp">施設支援事業</h3>
+      <p class="pillar-desc">オフィスの移転・内装・はたらく環境づくりを、情報とサービスで支援します。</p>
+      <div class="pillar-svcs"><span>OFFICEMILL</span></div>
+      <span class="pillar-more"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M7 1V13M7 13L2 8M7 13L12 8" stroke="currentColor" stroke-width="1.2"/></svg></span>
+    </a>
+    <a class="pillar p2 fade-up" href="#newbusiness">
+      <div class="pillar-no">02</div>
+      <div class="pillar-en">New Business</div>
+      <h3 class="pillar-jp">新規事業支援事業</h3>
+      <p class="pillar-desc">新しい事業をつくる人と企業を、データと伴走で支援します。</p>
+      <div class="pillar-svcs"><span>NEWFOR</span><span>NEWCON</span></div>
+      <span class="pillar-more"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M7 1V13M7 13L2 8M7 13L12 8" stroke="currentColor" stroke-width="1.2"/></svg></span>
+    </a>
   </div>
 </section>
 
-<!-- SERVICE -->
-<section class="service" id="service">
-  <div class="svc-head">
+<!-- 01 WORKPLACE -->
+<section class="service biz-wp" id="workplace">
+  <div class="biz-head">
+    <div class="biz-no">01</div>
     <div>
-      <div class="tag"><i></i><em>Our Service</em></div>
-      <h2 class="h2"><span class="rline"><span>What we <em>run.</em></span></span></h2>
+      <div class="tag" style="margin-bottom:14px"><i></i><em>Workplace</em></div>
+      <h2 class="biz-title">施設支援事業</h2>
+      <p class="lead-jp" style="max-width:560px">快適なオフィス環境を、すべての人に。オフィス環境に特化したポータルサイトを通じて、移転・内装・はたらく場所づくりを支援しています。</p>
     </div>
-    <p class="lead-jp" style="max-width:420px">オフィス環境ポータル「OFFICEMILL」、<br>経営者データベース「NEWFOR」、<br>新規事業の伴走支援「NEWCON」を運営しています。</p>
   </div>
   <a class="svc-card fade-up" href="https://offml.com" target="_blank" rel="noopener">
     <div class="svc-media"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80" alt="OFFICEMILL"></div>
@@ -302,28 +358,43 @@ footer .logo{font-size:15px;color:var(--ink)}
       </span>
     </div>
   </a>
-  <a class="svc-card fade-up" href="https://newfor.jp" target="_blank" rel="noopener">
-    <div class="svc-media"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80" alt="NEWFOR"></div>
-    <div class="svc-body">
-      <div class="svc-name"><span class="svc-word"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M10.6 16.4 L21.4 16.4 L25.8 31 L6.2 31 Z" fill="currentColor" opacity=".16"/><path d="M12.5 16.4 L19.5 16.4 L21.9 26.5 L10.1 26.5 Z" fill="currentColor" opacity=".24"/><ellipse cx="16" cy="15.4" rx="12.6" ry="4.4" fill="currentColor"/><path d="M9.7 13.4C10.4 9.2 12.9 6.5 16 6.5s5.6 2.7 6.3 6.9" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" fill="none"/></svg><span>NEW<b>FOR</b></span></span></div>
-      <div class="svc-domain">newfor.jp</div>
-      <p class="svc-en">A database of startup founders — where they studied, where they're from, and where they started.</p>
-      <p class="svc-desc">スタートアップ経営者の出身大学・出身地・新卒で入った会社がわかるデータベース。</p>
-      <div class="svc-badges"><span>Founders</span><span>Universities</span><span>Careers</span></div>
-      <span class="svc-link">
-        <span class="circle"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.2"/></svg></span>
-        Visit Site
-      </span>
+</section>
+
+<!-- 02 NEW BUSINESS -->
+<section class="biz-nb" id="newbusiness">
+  <div class="biz-head">
+    <div class="biz-no">02</div>
+    <div>
+      <div class="tag" style="margin-bottom:14px"><i></i><em>New Business</em></div>
+      <h2 class="biz-title">新規事業支援事業</h2>
+      <p class="lead-jp" style="max-width:560px">新しい事業をつくる人を、知る・学ぶところから、実際に立ち上げるところまで。データベースと伴走支援の2つのサービスで支援しています。</p>
     </div>
-  </a>
-  <div class="svc-card fade-up">
-    <div class="svc-media"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80" alt="NEWCON"></div>
-    <div class="svc-body">
-      <div class="svc-name"><span class="svc-word"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M10.6 16.4 L21.4 16.4 L25.8 31 L6.2 31 Z" fill="currentColor" opacity=".16"/><path d="M12.5 16.4 L19.5 16.4 L21.9 26.5 L10.1 26.5 Z" fill="currentColor" opacity=".24"/><ellipse cx="16" cy="15.4" rx="12.6" ry="4.4" fill="currentColor"/><path d="M9.7 13.4C10.4 9.2 12.9 6.5 16 6.5s5.6 2.7 6.3 6.9" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" fill="none"/></svg><span>NEW<b>CON</b></span></span></div>
-      <div class="svc-soon">Coming soon</div>
-      <p class="svc-en" style="margin-top:22px">New business consulting — from direction to your first customer.</p>
-      <p class="svc-desc">新規事業の立ち上げ経験者が、週1回から伴走する新規事業の伴走支援サービス。</p>
-      <div class="svc-badges" style="margin-bottom:0"><span>Direction</span><span>Validation</span><span>Coaching</span></div>
+  </div>
+  <div class="flow fade-up"><span>経営者に学ぶ</span><b>NEWFOR</b><i></i><span>事業を立ち上げる</span><b>NEWCON</b></div>
+  <div class="duo">
+    <a class="svc-card fade-up" href="https://newfor.jp" target="_blank" rel="noopener">
+      <div class="svc-media"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80" alt="NEWFOR"></div>
+      <div class="svc-body">
+        <div class="svc-name"><span class="svc-word"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M10.6 16.4 L21.4 16.4 L25.8 31 L6.2 31 Z" fill="currentColor" opacity=".16"/><path d="M12.5 16.4 L19.5 16.4 L21.9 26.5 L10.1 26.5 Z" fill="currentColor" opacity=".24"/><ellipse cx="16" cy="15.4" rx="12.6" ry="4.4" fill="currentColor"/><path d="M9.7 13.4C10.4 9.2 12.9 6.5 16 6.5s5.6 2.7 6.3 6.9" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" fill="none"/></svg><span>NEW<b>FOR</b></span></span></div>
+        <div class="svc-domain">newfor.jp</div>
+        <p class="svc-en">A database of startup founders — where they studied, where they're from, and where they started.</p>
+        <p class="svc-desc">スタートアップ経営者の出身大学・出身地・新卒で入った会社がわかるデータベース。</p>
+        <div class="svc-badges"><span>Founders</span><span>Universities</span><span>Careers</span></div>
+        <span class="svc-link">
+          <span class="circle"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.2"/></svg></span>
+          Visit Site
+        </span>
+      </div>
+    </a>
+    <div class="svc-card fade-up">
+      <div class="svc-media"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80" alt="NEWCON"></div>
+      <div class="svc-body">
+        <div class="svc-name"><span class="svc-word"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M10.6 16.4 L21.4 16.4 L25.8 31 L6.2 31 Z" fill="currentColor" opacity=".16"/><path d="M12.5 16.4 L19.5 16.4 L21.9 26.5 L10.1 26.5 Z" fill="currentColor" opacity=".24"/><ellipse cx="16" cy="15.4" rx="12.6" ry="4.4" fill="currentColor"/><path d="M9.7 13.4C10.4 9.2 12.9 6.5 16 6.5s5.6 2.7 6.3 6.9" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" fill="none"/></svg><span>NEW<b>CON</b></span></span></div>
+        <div class="svc-soon">Coming soon</div>
+        <p class="svc-en" style="margin-top:22px">New business consulting — from direction to your first customer.</p>
+        <p class="svc-desc">新規事業の立ち上げ経験者が、週1回から伴走する新規事業の伴走支援サービス。</p>
+        <div class="svc-badges" style="margin-bottom:0"><span>Direction</span><span>Validation</span><span>Coaching</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -334,15 +405,15 @@ footer .logo{font-size:15px;color:var(--ink)}
   <h2 class="h2"><span class="rline"><span>Company</span></span></h2>
   <div class="about-grid">
     <div>
-      <p class="lead-en" style="margin-bottom:28px">LilyPartners is a technology company on a mission to connect everyone with comfortable spaces.</p>
-      <p class="lead-jp">リリィパートナーズは、オフィス環境ポータルサイト「OFFICEMILL」を運営するテクノロジー企業です。快適なオフィス環境をすべての人に——それが私たちのビジョンです。</p>
+      <p class="lead-en" style="margin-bottom:28px">LilyPartners builds and supports businesses in two fields — the places people work, and the new ventures they create.</p>
+      <p class="lead-jp">リリィパートナーズは、オフィス環境ポータル「OFFICEMILL」を中心とした施設支援事業と、「NEWFOR」「NEWCON」による新規事業支援事業を展開しています。</p>
     </div>
     <div class="about-table">
       <dl><dt>Company</dt><dd>リリィパートナーズ合同会社<br>LilyPartners,Inc.</dd></dl>
       <dl><dt>Founded</dt><dd>2018</dd></dl>
-      <dl><dt>Representative</dt><dd>代表社員　白木 航<br>Wataru Shiraki</dd></dl>
+      <dl><dt>Representative</dt><dd>代表社員　白木 航</dd></dl>
       <dl><dt>Location</dt><dd>Ota-ku, Tokyo<br>東京都大田区</dd></dl>
-      <dl><dt>Business</dt><dd>ウェブサービスの企画・開発・運営<br>新規事業の立ち上げ支援</dd></dl>
+      <dl><dt>Business</dt><dd>施設支援事業<br>新規事業支援事業</dd></dl>
       <dl><dt>Service</dt><dd><a href="https://offml.com" target="_blank" rel="noopener">OFFICEMILL</a><br><a href="https://newfor.jp" target="_blank" rel="noopener">NEWFOR</a><br>NEWCON（準備中）</dd></dl>
     </div>
   </div>
@@ -410,14 +481,6 @@ document.querySelectorAll('.h2').forEach(h => {
 });
 
 /* ---- image mask reveals ---- */
-gsap.to('#visionImg', {
-  clipPath:'inset(0% 0 0 0)', duration:1.4, ease:'power4.inOut',
-  scrollTrigger:{trigger:'#visionImg', start:'top 80%'}
-});
-gsap.to('#visionImg img', {
-  scale:1.02, duration:2, ease:'power3.out',
-  scrollTrigger:{trigger:'#visionImg', start:'top 80%'}
-});
 /* ---- fade ups ---- */
 document.querySelectorAll('.fade-up').forEach(el => {
   gsap.to(el, {
