@@ -187,6 +187,12 @@ section{padding:17vh clamp(20px,4.5vw,64px)}
 .svc-link .circle{width:50px;height:50px;border:1px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background .4s,color .4s}
 .svc-card:hover .svc-link .circle{background:var(--ink);color:var(--bg)}
 
+.svc-card+.svc-card{margin-top:28px}
+.svc-word{display:flex;align-items:center;gap:14px;font-family:ui-monospace,'SF Mono','JetBrains Mono',Menlo,monospace;font-weight:800;font-size:clamp(28px,3.2vw,40px);letter-spacing:.16em;line-height:1;color:var(--ink)}
+.svc-word b{font-weight:900;color:#E2702C}
+.svc-word svg{width:clamp(34px,3.6vw,46px);height:auto;color:#6B7BF0;flex:none}
+.svc-soon{font-family:var(--serif);font-style:italic;font-size:14px;letter-spacing:.14em;color:var(--mut)}
+
 /* ---------- about ---------- */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:6vh}
 @media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:48px}}
@@ -279,7 +285,7 @@ footer .logo{font-size:15px;color:var(--ink)}
       <div class="tag"><i></i><em>Our Service</em></div>
       <h2 class="h2"><span class="rline"><span>What we <em>run.</em></span></span></h2>
     </div>
-    <p class="lead-jp" style="max-width:380px">オフィス環境ポータルサイト「OFFICEMILL」を<br>運営しています。</p>
+    <p class="lead-jp" style="max-width:420px">オフィス環境ポータル「OFFICEMILL」、<br>経営者データベース「NEWFOR」、<br>新規事業の伴走支援「NEWCON」を運営しています。</p>
   </div>
   <a class="svc-card fade-up" href="https://offml.com" target="_blank" rel="noopener">
     <div class="svc-media"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80" alt="OFFICEMILL"></div>
@@ -295,6 +301,30 @@ footer .logo{font-size:15px;color:var(--ink)}
       </span>
     </div>
   </a>
+  <a class="svc-card fade-up" href="https://newfor.jp" target="_blank" rel="noopener">
+    <div class="svc-media"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80" alt="NEWFOR"></div>
+    <div class="svc-body">
+      <div class="svc-name"><span class="svc-word"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M10.6 16.4 L21.4 16.4 L25.8 31 L6.2 31 Z" fill="currentColor" opacity=".16"/><path d="M12.5 16.4 L19.5 16.4 L21.9 26.5 L10.1 26.5 Z" fill="currentColor" opacity=".24"/><ellipse cx="16" cy="15.4" rx="12.6" ry="4.4" fill="currentColor"/><path d="M9.7 13.4C10.4 9.2 12.9 6.5 16 6.5s5.6 2.7 6.3 6.9" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" fill="none"/></svg><span>NEW<b>FOR</b></span></span></div>
+      <div class="svc-domain">newfor.jp</div>
+      <p class="svc-en">A database of startup founders — where they studied, where they're from, and where they started.</p>
+      <p class="svc-desc">スタートアップ経営者の出身大学・出身地・新卒で入った会社がわかるデータベース。</p>
+      <div class="svc-badges"><span>Founders</span><span>Universities</span><span>Careers</span></div>
+      <span class="svc-link">
+        <span class="circle"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.2"/></svg></span>
+        Visit Site
+      </span>
+    </div>
+  </a>
+  <div class="svc-card fade-up">
+    <div class="svc-media"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80" alt="NEWCON"></div>
+    <div class="svc-body">
+      <div class="svc-name"><span class="svc-word"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M10.6 16.4 L21.4 16.4 L25.8 31 L6.2 31 Z" fill="currentColor" opacity=".16"/><path d="M12.5 16.4 L19.5 16.4 L21.9 26.5 L10.1 26.5 Z" fill="currentColor" opacity=".24"/><ellipse cx="16" cy="15.4" rx="12.6" ry="4.4" fill="currentColor"/><path d="M9.7 13.4C10.4 9.2 12.9 6.5 16 6.5s5.6 2.7 6.3 6.9" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" fill="none"/></svg><span>NEW<b>CON</b></span></span></div>
+      <div class="svc-soon">Coming soon</div>
+      <p class="svc-en" style="margin-top:22px">New business consulting — from direction to your first customer.</p>
+      <p class="svc-desc">新規事業の立ち上げ経験者が、週1回から伴走する新規事業の伴走支援サービス。</p>
+      <div class="svc-badges" style="margin-bottom:0"><span>Direction</span><span>Validation</span><span>Coaching</span></div>
+    </div>
+  </div>
 </section>
 
 <!-- ABOUT -->
@@ -310,8 +340,8 @@ footer .logo{font-size:15px;color:var(--ink)}
       <dl><dt>Company</dt><dd>リリィパートナーズ合同会社<br>LilyPartners,Inc.</dd></dl>
       <dl><dt>Founded</dt><dd>2018</dd></dl>
       <dl><dt>Location</dt><dd>Ota-ku, Tokyo<br>東京都大田区</dd></dl>
-      <dl><dt>Business</dt><dd>ウェブサービスの企画・開発・運営</dd></dl>
-      <dl><dt>Service</dt><dd><a href="https://offml.com" target="_blank" rel="noopener">OFFICEMILL</a></dd></dl>
+      <dl><dt>Business</dt><dd>ウェブサービスの企画・開発・運営<br>新規事業の立ち上げ支援</dd></dl>
+      <dl><dt>Service</dt><dd><a href="https://offml.com" target="_blank" rel="noopener">OFFICEMILL</a><br><a href="https://newfor.jp" target="_blank" rel="noopener">NEWFOR</a><br>NEWCON（準備中）</dd></dl>
     </div>
   </div>
 </section>
